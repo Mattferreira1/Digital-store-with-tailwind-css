@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Header from "../components/Header"
 
-const Template = () => {
+const Layout = () => {
     return ( 
         <>
             <Header/>
@@ -10,4 +10,4 @@ const Template = () => {
      );
 }
  
-export default Template;
+export default Layout;
