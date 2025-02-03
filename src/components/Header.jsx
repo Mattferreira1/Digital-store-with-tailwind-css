@@ -32,7 +32,7 @@ const Header = () => {
                 </div>
                 <input className=" bg-lightGray3 text-darkGray2 mt-1 block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm lg:hidden" type="text" placeholder="Pesquisar produto..."/>
                 <div className="md: hidden lg:flex gap-7 px-2">
-                    <NavLink to="/Home" className="text-darkGray2 text-base font-light font-inter hover:underline">Home</NavLink>
+                    <NavLink to="/" className="text-darkGray2 text-base font-light font-inter hover:underline">Home</NavLink>
                     <NavLink to="/Produtos" className="text-darkGray2 text-base font-light font-inter hover:underline hover:text-darkGray3">Produtos</NavLink>
                     <NavLink to="/Produtos" className="text-darkGray2 text-base font-light font-inter hover:underline hover:text-darkGray3">Categorias</NavLink>
                     <NavLink to="/Produtos" className="text-darkGray2 text-base font-light font-inter hover:underline hover:text-darkGray3 ">Meus Pedidos</NavLink>
