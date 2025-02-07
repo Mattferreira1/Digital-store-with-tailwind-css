@@ -1,6 +1,11 @@
+import { useParams } from "react-router-dom";
+
 // import products from "./Produtos"
 const ProdutosListining = ({produtos, text, cols, width}) => {
+    // const filteredProducts = produtos.filter((produto) => produto.featured === true)
 const products= produtos
+
+
     return (
         <section className={`w-[${width}] flex flex-col items-center mx-auto`}>
             {text?(

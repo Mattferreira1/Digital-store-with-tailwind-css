@@ -1,6 +1,6 @@
 import logo from "../assets/logo (1).svg"
 import facebook from "../assets/icons/facebook.svg"
-import twitter from "../assets/icons/twitter.svg"
+import twitter from "../assets/icons/Twitter.svg"
 import instagram from "../assets/icons/instagram.svg"
 
 const Footer = () => {
