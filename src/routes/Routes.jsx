@@ -5,7 +5,6 @@ import Produtos from "../pages/Produtos";
 
 const Rotas = () => {
     return ( 
-        <>
         <BrowserRouter>
             <Routes>
                 <Route element={<Layout/>}>
@@ -14,7 +13,6 @@ const Rotas = () => {
                 </Route>
             </Routes>
         </BrowserRouter>
-        </>
      );
 }
  

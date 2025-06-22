@@ -3,8 +3,8 @@ import ornament from "../../assets/ornament.png"
 
 const Banner1 = () => {
     return ( 
-        <div className="flex flex-col-reverse flex-wrap flex-shrink-0 justify-center p-[48px] items-center right-2/4 w-[100%] h-[100%] overflow-hidden lg:flex-row">
-            <div className="flex flex-col p-[24px] text-center justify-center gap-4 w-[80%] h-[50%] items-center md:w-2/4 md:h-3/4 md:text-start md:items-start lg:justify-start lg:w-[670px]">
+        <div className="flex flex-col-reverse flex-wrap flex-shrink-0 justify-center p-[48px] items-center right-2/4 w-[100%] h-[100%] overflow-hidden flex-row">
+            <div className="flex flex-col p-[24px] text-center justify-center gap-4 w-[80%] h-[50%] items-center md:w-2/4 md:h-3/4 md:text-start md:items-start lg:justify-start xl:w-[670px]">
                 <p className="font-inter font-bold text-[16px] text-warning">Melhores ofertas personalizadas</p>
                 <h1 className="font-inter font-extrabold text-[40px] md:text-[64px] text-black">Queima de estoque Nike 🔥</h1>
                 <p className="font-inter font-light text-[18px] text-darkGray2">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
