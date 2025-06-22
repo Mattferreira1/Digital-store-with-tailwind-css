@@ -10,26 +10,28 @@ import React from "react";
 
 
 const Home = () => {
-    const [Products, SetProducts] = useState([])
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await API.get('/produtos?page=1&limit=8');
-                SetProducts(response.data);
-            } catch (error) {
-                console.error("Erro ao buscar produtos:", error);
-            }
-        };
+    // const [Products, SetProducts] = useState([])
+    // useEffect(() => {
+    //     const fetchProducts = async () => {
+    //         try {
+    //             const response = await API.get('/produtos?page=1&limit=8');
+    //             SetProducts(response.data);
+    //         } catch (error) {
+    //             console.error("Erro ao buscar produtos:", error);
+    //         }
+    //     };
 
-        fetchProducts();
-    }, []);
+    //     fetchProducts();
+    // }, []);
     
     return ( 
-        <main className="bg-white">
+        <main className="bg-white flex  flex-col items-center">
             <Galeria/>
-            <Destaques/>
-            <Colecoes/>
-            <ProdutosListining produtos={Products} text={true} width="1200px"/>
+            <section className="w-[1280px] py-[24px]">
+                <Destaques/>    
+                <Colecoes/>
+                <ProdutosListining text={true} cols=""/>
+            </section>
             <SpecialOffer/>
         </main> 
 );

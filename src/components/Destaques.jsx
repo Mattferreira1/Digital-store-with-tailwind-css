@@ -4,7 +4,7 @@ import headset from "../assets/images/headset.png"
 
 const Destaques = () => {
     return ( 
-        <section className="p-[24px] w-full mx-auto xl:w-[1200px] ">
+        <section className=" w-full mx-auto xl:w-[1200px] ">
             <h2 className="text-darkGray2 mb-[6px] font-inter font-bold text-[24px] text-center lg:text-start">Coleções em destaque</h2>
             <div className="flex flex-col justify-between items-center gap-5 lg:flex-row ">
                 <div className="w-[380px] h-[212px] bg-[#D8E3F2] p-[20px] shrink-0 rounded-md relative flex  overflow-hidden lg:w-[31%]">

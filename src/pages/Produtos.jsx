@@ -1,29 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProdutosListining from "../components/ProdutosListining";
 import {API} from "../services"
-import { useParams } from "react-router-dom";
-import products from "./Produtos"
-
 const Produtos = () => {
        const [Products, SetProducts] = useState([])
-    //    async function fetchProducts() {
-    //        try {
-    //            const response = await API.get('/produtos?page=1&limit=20');
-    //            SetProducts(response.data);
-    //        } catch (error) {
-    //            console.error("Erro ao buscar produtos:", error);
-    //        }
-    //    }
-       const filter = useParams()
-        console.log(filter)
-    //    fetchProducts(products)
+       async function fetchProducts() {
+           try {
+               const response = await API.get();
+               SetProducts(response.data);
+           } catch (error) {
+               console.error("Erro ao buscar produtos:", error);
+           }
+       }
+    useEffect(()=>{
+        fetchProducts()
+    },[])
     return ( 
         <section className="bg-white w-full flex justify-evenly">
             <div className="w-[30%]">
-
+                <h1>Filtros</h1>
+                <select name="" id="">
+                    <option value="men's clothing">men&apos;s clothing</option>
+                    <option value="jewelery">jewelery</option>
+                    <option value="electronics">electronics</option>
+                    <option value="women's clothing">women&apos;s clothing</option>
+                </select>
             </div>
             <div className="w-[60%]">
-                <ProdutosListining produtos={Products} cols="3" width="100%"/>
+                <ProdutosListining produtos={Products} width="100%"/>
             </div>
         </section>
      );
